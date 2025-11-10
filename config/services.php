@@ -14,6 +14,12 @@ return [
     |
     */
 
+    'docai' => [
+      'project'   => env('DOC_AI_PROJECT'),
+      'location'  => env('DOC_AI_LOCATION', 'us'),
+      'processor' => env('DOC_AI_PROCESSOR'),
+    ],
+
     'postmark' => [
         'key' => env('POSTMARK_API_KEY'),
     ],

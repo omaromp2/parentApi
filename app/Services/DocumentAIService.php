@@ -15,9 +15,9 @@ class DocumentAiService
         ]);
 
         $name = $client->processorName(
-            env('GOOGLE_PROJECT_ID'),
-            env('GOOGLE_LOCATION', 'us'),
-            env('GOOGLE_PROCESSOR_ID'),
+            env('DOC_AI_PROJECT'),
+            env('DOC_AI_LOCATION', 'us'),
+            env('DOC_AI_PROCESSOR'),
         );
 
         $raw = (new RawDocument())
